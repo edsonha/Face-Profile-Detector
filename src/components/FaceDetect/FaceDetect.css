@@ -1,0 +1,41 @@
+.bounding-box {
+	position: absolute;
+	box-shadow: 0 0 0 3px #149df2 inset;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	cursor: pointer;
+}
+
+#image-input {
+  background-color: #252525;
+  width: 60%;
+  overflow: hidden;
+  padding: 20px;
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#image-input img {
+  max-height: 375px;
+}
+
+@media (max-width: 1200px) {
+  #image-input {
+    width: 100%;
+    height: 60%;
+  }
+  #image-input img{
+    max-width: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width: 600px) {
+  #image-input img{
+    max-width: 300px;
+    height: auto;
+  }
+}

@@ -1,0 +1,126 @@
+.css-1eitjko {
+  position: relative;
+}
+
+.css-1a2v5xa {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: #0C438B none repeat scroll 0% 0%;
+  border-radius: 50%;
+  animation: 1.5s ease 0s infinite normal forwards running animation-he4a8s;
+}
+
+.css-1wd6nbc {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: #0C438B none repeat scroll 0% 0%;
+  border-radius: 50%;
+  animation: 1.5s ease 0s infinite normal forwards running animation-189nbxj;
+}
+
+.css-jkkkrs {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: #0C438B none repeat scroll 0% 0%;
+  border-radius: 50%;
+  animation: 1.5s ease 0s infinite normal forwards running animation-105ii2t;
+}
+
+.css-qd8oq0 {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: #0C438B none repeat scroll 0% 0%;
+  border-radius: 50%;
+  animation: 1.5s ease 0s infinite normal forwards running animation-ja1eqy;
+}
+
+.css-qd8oq0 {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: #0C438B none repeat scroll 0% 0%;
+  border-radius: 50%;
+  animation: 1.5s ease 0s infinite normal forwards running animation-ja1eqy;
+}
+
+.css-1tqtuzj {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  background: #0C438B none repeat scroll 0% 0%;
+  border-radius: 50%;
+  animation: 1.5s ease 0s infinite normal forwards running animation-cq3ctx;
+}
+
+@keyframes animation-he4a8s {
+  25% {
+    transform: translateX(-1rem) scale(0.75);
+  }
+  50% {
+    transform: translateX(-3rem) scale(0.6);
+  }
+  75% {
+    transform: translateX(-5rem) scale(0.5);
+  }
+  95% {
+    transform: translateX(0rem) scale(1);
+  }
+}
+
+@keyframes animation-189nbxj {
+  25% {
+    transform: translateX(-1rem) scale(0.75);
+  }
+  50% {
+    transform: translateX(-3rem) scale(0.6);
+  }
+  75% {
+    transform: translateX(-3rem) scale(0.6);
+  }
+  95% {
+    transform: translateX(0rem) scale(1);
+  }
+}
+
+@keyframes animation-105ii2t {
+  25% {
+    transform: translateX(-1rem) scale(0.75);
+  }
+  75% {
+    transform: translateX(-1rem) scale(0.75);
+  }
+  95% {
+    transform: translateX(0rem) scale(1);
+  }
+}
+
+@keyframes animation-ja1eqy {
+  25% {
+    transform: translateX(1rem) scale(0.75);
+  }
+  75% {
+    transform: translateX(1rem) scale(0.75);
+  }
+  95% {
+    transform: translateX(0rem) scale(1);
+  }
+}
+
+@keyframes animation-cq3ctx {
+  25% {
+    transform: translateX(1rem) scale(0.75);
+  }
+  50% {
+    transform: translateX(3rem) scale(0.6);
+  }
+  75% {
+    transform: translateX(5rem) scale(0.5);
+  }
+  95% {
+    transform: translateX(0rem) scale(1);
+  }
+}

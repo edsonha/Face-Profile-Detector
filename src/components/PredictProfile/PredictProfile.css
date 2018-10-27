@@ -1,0 +1,55 @@
+#result {
+  width: 40%;
+  padding: 20px;
+}
+
+#intro {
+  text-align: center;
+  padding: 100px 50px 0;
+}
+
+#intro p {
+  margin: 0 0 5px 0;
+}
+
+#detected-face {
+  margin: 0;
+  padding-bottom: 5px;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+#guess {
+  padding-top: 100px;
+  text-align: center;
+}
+
+#guess p {
+  margin: 10px;
+  font-size: 20px;
+}
+
+#spinner {
+  margin: 175px 0 0 225px;
+}
+
+@media (max-width: 1200px) {
+  #result {
+    width: 100%;
+    height: 40%;
+  }
+  #intro {
+    padding: 10px 0 0 0;
+  }
+  #guess {
+    padding-top: 40px;
+  }
+  #spinner {
+    margin: 125px 0 0 450px;
+  }
+}
+
+@media (max-width: 800px) {
+    #spinner {
+      margin: 100px 0 0 150px;
+  }
+}
