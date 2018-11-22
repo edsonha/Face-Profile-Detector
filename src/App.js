@@ -77,7 +77,7 @@ class App extends Component {
 
   onFaceClick = (event) => {
     this.setState({ selectedProfile: this.state.allProfile[event.target.attributes['data-index'].value] })
-    this.setState({ clickFaces: false })
+    this.setState({ clickFaces: true })
   }
 
   onInputChange = (event) => {
@@ -108,7 +108,6 @@ class App extends Component {
             });
           } else {
             this.setState({
-              clickFaces: true,
               faceBox: this.calculateFaceLocation(response),
               allProfile: this.identifyProfileData(response),
               selectedProfile: this.identifyProfileData(response), //to be done

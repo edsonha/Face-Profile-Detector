@@ -33,15 +33,6 @@ const PredictProfile = ({ imageUrl, isLoading, isNotFace, selectedProfile, click
         </div>
       );
     } else if (clickFaces) {
-      return (
-        <div id="result">
-          <p id="detected-face">{faceBox.length} FACE DETECTED</p>
-          <div id="guess">
-            <p>Please click on the box to reveal profile data</p>
-          </div>
-        </div>
-      )
-    } else {
       let selectedGender = selectedProfile.gender === "masculine" ? "male" : "female";
       return (
         <div id="result">
@@ -53,6 +44,15 @@ const PredictProfile = ({ imageUrl, isLoading, isNotFace, selectedProfile, click
           </div>
         </div>
       );
+    } else {
+      return (
+        <div id="result">
+          <p id="detected-face">{faceBox.length} FACE DETECTED</p>
+          <div id="guess">
+            <p>Please click on the box to reveal profile data</p>
+          </div>
+        </div>
+      )
     }
   }
 }
