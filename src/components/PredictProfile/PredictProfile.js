@@ -2,7 +2,7 @@ import React from 'react';
 import LoadingBar from '../LoadingBar/LoadingBar';
 import './PredictProfile.css';
 
-const PredictProfile = ({ imageUrl, isLoading, isNotFace, selectedProfile, clickFaces, faceBox }) => {
+const PredictProfile = ({ error, imageUrl, isLoading, isNotFace, selectedProfile, getProfile, faceBox }) => {
   if(imageUrl === "") {
     return(
       <div id="result">
@@ -24,6 +24,14 @@ const PredictProfile = ({ imageUrl, isLoading, isNotFace, selectedProfile, click
       </div>
     );
   } else {
+    if (error.status === 400)
+      return(
+        <div id="result">
+          <div id="intro">
+            <h3>Wrong URL. Please input the correct URL address</h3>
+          </div>
+        </div>
+      );
     if (isNotFace) {
       return(
         <div id="result">
@@ -32,7 +40,7 @@ const PredictProfile = ({ imageUrl, isLoading, isNotFace, selectedProfile, click
           </div>
         </div>
       );
-    } else if (clickFaces) {
+    } else if (getProfile) {
       let selectedGender = selectedProfile.gender === "masculine" ? "male" : "female";
       return (
         <div id="result">
@@ -49,7 +57,7 @@ const PredictProfile = ({ imageUrl, isLoading, isNotFace, selectedProfile, click
         <div id="result">
           <p id="detected-face">{faceBox.length} FACE DETECTED</p>
           <div id="guess">
-            <p>Please click on the box to reveal profile data</p>
+            <p>Please hover over the box to reveal profile data</p>
           </div>
         </div>
       )

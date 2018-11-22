@@ -1,6 +1,7 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Register = ({ onRouteChange }) => {
+const Register = ({ onSignIn }) => {
 		return (
 			<article className="br3 ba b--black-10 mv4 w-100 w-50-m w-25-l mw6 shadow-5 center">
 				<main className="pa4 black-80">
@@ -20,13 +21,8 @@ const Register = ({ onRouteChange }) => {
 				        <input className="b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100" type="password" name="password"  id="password" />
 				      </div>
 				    </fieldset>
-				    <div className="">
-				      <input 
-				      	className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib"
-				      	type="submit" 
-				      	value="Register"
-				      	onClick={() => onRouteChange('home')} 
-				      />
+						<div className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib">
+				      <Link to='/home' onClick={onSignIn} style={{ color: 'black', textDecoration: 'none' }}>Register</Link>
 				    </div>
 				  </div>
 				</main>
