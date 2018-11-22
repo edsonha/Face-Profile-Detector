@@ -22,7 +22,7 @@ const Register = ({ onSignIn }) => {
 				      </div>
 				    </fieldset>
 						<div className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib">
-				      <Link to='/home' onClick={onSignIn} style={{ color: 'black', textDecoration: 'none' }}>Register</Link>
+				      <Link to='Face-Profile-Detector/home' onClick={onSignIn} style={{ color: 'black', textDecoration: 'none' }}>Register</Link>
 				    </div>
 				  </div>
 				</main>

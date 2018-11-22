@@ -44,21 +44,21 @@ class App extends Component {
       <div className="App">
         <Particles className='particles' params={particlesOptions} />
         <Navigation isSignedIn={isSignedIn} onSignOut={onSignOut} />
-        <Route exact path='/' render={() => <Redirect to='/sign-in' />} />
-        <Switch>          
-          <Route exact path='/sign-in' render={() => 
+        <Switch>
+          <Route exact path='Face-Profile-Detector/' render={() => <Redirect to='Face-Profile-Detector/sign-in' />} />          
+          <Route exact path='Face-Profile-Detector/sign-in' render={() => 
             <div>
               <Logo />
               <SignIn onSignIn={onSignIn} />
             </div>
           }/>
-          <Route exact path='/register' render={() => 
+          <Route exact path='Face-Profile-Detector/register' render={() => 
             <div>
               <Logo />
               <Register onSignIn={onSignIn} />
             </div>
           }/>
-          <Route exact path='/home' render={() => <Home />} />
+          <Route exact path='Face-Profile-Detector/home' render={() => <Home />} />
         </Switch>  
       </div>
     );
