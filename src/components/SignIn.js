@@ -18,11 +18,11 @@ const SignIn = ({ onSignIn }) => {
 				      </div>
 				    </fieldset>
 				    <div className="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib">
-				      <Link to='Face-Profile-Detector/home' onClick={onSignIn} style={{ color: 'black', textDecoration: 'none' }}>Sign In</Link>
+				      <Link to='/home' onClick={onSignIn} style={{ color: 'black', textDecoration: 'none' }}>Sign In</Link>
 				    </div>
 				    <div className="lh-copy mt3">
 				      <div className="f6 link dim black db pointer">
-				      	<Link to='Face-Profile-Detector/register' style={{ color: 'black', textDecoration: 'none' }}>Register</Link>
+				      	<Link to='/register' style={{ color: 'black', textDecoration: 'none' }}>Register</Link>
 				      </div>
 				      <p className="b">*To enter, click Sign In button above</p>
 				    </div>
